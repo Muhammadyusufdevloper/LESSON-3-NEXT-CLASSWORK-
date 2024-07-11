@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Provider } from "react-redux";
 import StoreProvider from "./StoreProvider";
 import DefaultValues from "@/components/DefaultValues";
 
