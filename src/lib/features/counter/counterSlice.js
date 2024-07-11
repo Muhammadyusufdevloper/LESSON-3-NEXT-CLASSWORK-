@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    value: +localStorage.getItem("counter") || 0,
+    value: localStorage.getItem("counter") || 0,
 }
 
 export const counterSlice = createSlice({
