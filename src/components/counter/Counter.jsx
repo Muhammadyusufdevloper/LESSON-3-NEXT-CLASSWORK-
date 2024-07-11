@@ -8,10 +8,12 @@ const Counter = () => {
     const dispatch = useDispatch()
     return (
         <>
-            <div className='flex items-center gap-2'>
-                <button className='w-10 h-10 flex items-center justify-center bg-slate-800 text-white' onClick={() => dispatch(increment())}>+</button>
-                <div className='w-10 h-10 flex items-center justify-center'>{count}</div>
-                <button className='w-10 h-10 flex items-center justify-center bg-slate-800 text-white' disabled={count <= 0} onClick={() => dispatch(decrement())}>-</button>
+            <div className='w-full min-h-screen flex items-center justify-center'>
+                <div className='flex items-center gap-2'>
+                    <button className='w-10 h-10 flex items-center justify-center bg-slate-800 text-white' onClick={() => dispatch(increment())}>+</button>
+                    <div className='w-10 h-10 flex items-center justify-center'>{count}</div>
+                    <button className='w-10 h-10 flex items-center justify-center bg-slate-800 text-white' disabled={count <= 0} onClick={() => dispatch(decrement())}>-</button>
+                </div>
             </div>
         </>
     )
